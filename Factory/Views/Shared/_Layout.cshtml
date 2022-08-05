@@ -8,9 +8,8 @@
   </head>
   <body>
     <div class="container"> 
-      <img src="https://placeholder.com/jpg" alt="placeholder" class="placeholder"> 
-    @RenderBody()
-     </div>
-       <p> @Html.ActionLink("Click here for Machine index", "Index", "Machines", null) | @Html.ActionLink("See all Engineers", "Index", "Engineers", null) </p>
+     @RenderBody()
+    </div>
+    <p> @Html.ActionLink("Click here for Machine index", "Index", "Machines", null) | @Html.ActionLink("See all Engineers", "Index", "Engineers", null) </p>
   </body>
 </html>
