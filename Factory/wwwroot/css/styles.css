@@ -22,17 +22,30 @@ body{
   justify-content: space-around;
 
 }
+.indexImage{
+  display: block;
+justify-content: center;
+width: 80%;
+margin-top: auto;
+opacity: .6;
+margin-left: auto;
+margin-right: auto;
+}
+
 #mainlinks {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20rem;
+  margin-left: 40%;
+  margin-right: 40%;
   position: center;
-  margin-top: 20px;
-  
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #title{
   text-align: center;
   text-shadow: #eaae08;
+  font-size: 60px;
+  text-decoration: underline;
 }
 .customLabel {
   font-family: 'PT Sans Narrow', sans-serif;
