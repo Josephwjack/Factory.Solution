@@ -62,7 +62,7 @@ namespace Factory.Controllers
       var thisEngineer = _db.Machines.FirstOrDefault(Machine => Machine.MachineId == id);
       return View(thisEngineer);
     }
-
+/// 69 might need to be thismachine
     [HttpPost, ActionName("Delete")]
     public ActionResult DeleteConfirmed(int id)
     {
