@@ -16,6 +16,12 @@ body{
   color: #fff;
 }
 
+.customLabel {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+  font-weight: 20rem;
+}
+
 /* nav {
   justify-content: center;
   width: 100%;

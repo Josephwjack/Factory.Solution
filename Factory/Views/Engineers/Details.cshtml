@@ -10,8 +10,13 @@
 
 @if(@Model.JoinEntities.Count == 0)
 {
-  <p>This Engineer is not assigned to any machines. Click "edit engineer" to add or assign this engineer to a machine.</p>
+  <p>This Engineer is not assigned to any machines. Click "edit engineer" to assign this engineer to a machine.</p>
+  <hr/>
+  @Html.ActionLink("Edit Engineer", "Edit", null, new { id = Model.EngineerId }, new { @class="htmlButton"}) 
+  @Html.ActionLink("Delete Engineer", "Delete", null, new { id = Model.EngineerId }, new { @class="htmlButton"})
 }
+
+
 else
 {
   <h4>Machines this engineer is certified for:</h4>
