@@ -1,0 +1,27 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer
+
+<h1>EDIT:</h1>
+
+<h4>Edit this Engineer: @Html.DisplayFor(model => model.Name)</h4>
+
+@using (Html.BeginForm())
+{
+  <div class="inputspacing">
+  @Html.HiddenFor(model => model.EngineerId)
+
+  @Html.LabelFor(model => model.Name, "Name:" , new { @class="customLabel"})
+  @Html.EditorFor(model => model.Name)
+
+  @Html.LabelFor(model => model.Description, "Description:" , new { @class="customLabel"})
+  @Html.EditorFor(model => model.Description)
+
+  @Html.Label("Select Machine")
+  @Html.DropDownList("MachineId")
+
+  <input class = "saveicon" type="image" img src="https://raw.githubusercontent.com/GarrettHays/images/main/noun-save-5040600.png" style="width:20px;"> <a href="@Url.Action("Delete", "Engineers",  new { id = Model.EngineerId })"><img class = "trashicon" src="https://raw.githubusercontent.com/GarrettHays/images/main/noun-trash-can-2342129.png" style="width:20px;"></a>
+  </div>
+}

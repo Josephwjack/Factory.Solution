@@ -18,7 +18,10 @@ namespace Factory.Controllers
 
     public ActionResult Index()
     {
-      return View(_db.Engineers.ToList());
+      ViewBag.PageTitle = "Engineer Page";
+      List<Engineer> model = _db.Engineers.ToList();
+      return View(model);
+      // return View(_db.Engineers.ToList());
     }
 
     public ActionResult Create()

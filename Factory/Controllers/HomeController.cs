@@ -8,6 +8,7 @@ namespace Factory.Controllers
       [HttpGet("/")]
       public ActionResult Index()
       {
+        ViewBag.PageTitle = ("Factory Home");
         return View();
       }
 
