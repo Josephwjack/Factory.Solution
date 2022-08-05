@@ -1,0 +1,26 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Machine
+
+<h1>Machine Details:</h1>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+
+@if(@Model.JoinEntities.Count == 0)
+{
+  <p>This Machine does not have any Engineers certified to work on it.</p>
+}
+else
+{
+  <h4>Engineers certified for this Machine:</h4>
+  <ul>
+  @foreach(var join in Model.JoinEntities)
+  {
+    <li>@join.Engineer.Name</li>
+  }
+  </ul>
+}
+
+  <p>@Html.ActionLink("Add engineer", "Create", "Engineers", null, new { @class="htmlButton"}) | @Html.ActionLink("Edit Machine", "Edit", null, new { id = Model.MachineId }, new {@class="htmlButton"}) | @Html.ActionLink("Back to Machines", "Index",null, null, new { @class="htmlButton"})</p>
