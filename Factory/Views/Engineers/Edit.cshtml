@@ -22,6 +22,10 @@
   @Html.Label("Select Machine")
   @Html.DropDownList("MachineId")
 
-  <input class = "saveicon" type="image" img src="https://raw.githubusercontent.com/GarrettHays/images/main/noun-save-5040600.png" style="width:20px;"> <a href="@Url.Action("Delete", "Engineers",  new { id = Model.EngineerId })"><img class = "trashicon" src="https://raw.githubusercontent.com/GarrettHays/images/main/noun-trash-can-2342129.png" style="width:20px;"></a>
   </div>
+  <div id="buttonplace">
+    <input type="submit" value="Save" class="htmlButton" />
+    <input type="submit" value="Delete" class="htmlButton"/>
+  </div>
+  
 }

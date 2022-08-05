@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap');
 body{
+  font-size: 20px;
   margin: 0;
   padding: 0;
   font-family: 'PT Sans Narrow', sans-serif;
@@ -16,18 +17,18 @@ body{
   color: #fff;
 }
 
+#buttonplace {
+  position:fixed;
+  justify-content: space-around;
+
+}
+
+
 .customLabel {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 20px;
   font-weight: 20rem;
 }
-
-/* nav {
-  justify-content: center;
-  width: 100%;
-  font-size: large;
-  font-weight: 500;
-} */
 
 .htmlButton {
   
@@ -46,8 +47,6 @@ body{
   transition-duration: .15s;
   transition-property: all;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
-
-  
 }
 
 .htmlButton:hover {

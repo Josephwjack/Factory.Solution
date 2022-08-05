@@ -27,8 +27,10 @@ else
     @using (Html.BeginForm("DeleteMachine", "Engineers"))
     {
       @Html.Hidden("joinId", @join.EngineerMachineId)
-      <input type="submit" value="Delete" class="htmlButton"/>
+      
     }
+    @Html.ActionLink("Edit Engineer", "Edit", null, new { id = Model.EngineerId }, new { @class="htmlButton"}) 
+    @Html.ActionLink("Delete Engineer", "Delete", null, new { id = Model.EngineerId }, new { @class="htmlButton"})
   }
   </ul>
 }
