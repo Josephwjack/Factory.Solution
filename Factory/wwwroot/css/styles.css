@@ -22,8 +22,18 @@ body{
   justify-content: space-around;
 
 }
+#mainlinks {
+  position: center;
+  margin-top: 20px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
 
-
+#title{
+  text-align: center;
+  text-shadow: #eaae08;
+}
 .customLabel {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 20px;
