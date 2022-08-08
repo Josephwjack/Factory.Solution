@@ -9,7 +9,7 @@
 
 ## Technologies Used
 
-* [C3](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
+* [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
 * [.NET](https://dotnet.microsoft.com/en-us/)
 * [Entity Framework](https://docs.microsoft.com/en-us/ef/)
 * [SQL Workbench](https://www.mysql.com/products/workbench/)
