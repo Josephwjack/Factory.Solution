@@ -59,17 +59,27 @@ namespace Factory.Controllers
 
     public ActionResult Delete(int id)
     {
-      var thisEngineer = _db.Machines.FirstOrDefault(Machine => Machine.MachineId == id);
-      return View(thisEngineer);
+      var thisMachine = _db.Machines.FirstOrDefault(Machine => Machine.MachineId == id);
+      return View(thisMachine);
     }
-/// 69 might need to be thismachine
+
     [HttpPost, ActionName("Delete")]
     public ActionResult DeleteConfirmed(int id)
     {
-      var thisEngineer = _db.Machines.FirstOrDefault(Machine => Machine.MachineId == id);
-      _db.Machines.Remove(thisEngineer);
+      var thisMachine = _db.Machines.FirstOrDefault(Machine => Machine.MachineId == id);
+      _db.Machines.Remove(thisMachine);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+    
+    [HttpPost]
+    public ActionResult DeleteEngineer(int joinId)
+    {
+    var joinEntry = _db.EngineerMachine.FirstOrDefault(entry => entry.EngineerMachineId == joinId);
+    _db.EngineerMachine.Remove(joinEntry);
+    _db.SaveChanges();
+    return RedirectToAction("Index");
+}
+
   }
 }
